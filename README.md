@@ -1,7 +1,18 @@
 ADB-String-Stream
 =================
 
-A C# GUI for sending strings to android devices using adb
+A Windows Forms C# GUI for sending strings to android devices using adb
+It allows sending text written using a computer keyboard into an active text field selected in the Android Device
+Examples of use are replying to messages in any app quickly or pasting complex URLs
+
+This program consists of System.Process calls to a copy of adb.exe inside the same working directory.
+adb.exe, and it's corresponding dlls, can be retrieved using the Android SDK tools.
+
+This program is intended for users with experience in Android development, and therefore no binaries are provided and must be compiled by the end user.
+It was compiled and tested successfully in Visual Studio 2013, .Net framework 4.5 and Windows 8.1
+
+Known Bugs:
+  -Parenthesis will break the syntax and cause the string to not arrive at the Android Device.
 
 #Initial setup#
 
