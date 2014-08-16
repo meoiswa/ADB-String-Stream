@@ -39,6 +39,7 @@ namespace ADBStringStream
             // 
             // buttonConnect
             // 
+            this.buttonConnect.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonConnect.Location = new System.Drawing.Point(197, 10);
             this.buttonConnect.Name = "buttonConnect";
             this.buttonConnect.Size = new System.Drawing.Size(75, 23);
@@ -49,6 +50,8 @@ namespace ADBStringStream
             // 
             // textBoxIP
             // 
+            this.textBoxIP.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxIP.Location = new System.Drawing.Point(72, 12);
             this.textBoxIP.Name = "textBoxIP";
             this.textBoxIP.Size = new System.Drawing.Size(119, 20);
@@ -65,6 +68,8 @@ namespace ADBStringStream
             // 
             // buttonSend
             // 
+            this.buttonSend.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.buttonSend.Enabled = false;
             this.buttonSend.Location = new System.Drawing.Point(12, 67);
             this.buttonSend.Name = "buttonSend";
@@ -76,8 +81,12 @@ namespace ADBStringStream
             // 
             // textBoxString
             // 
+            this.textBoxString.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
             this.textBoxString.Enabled = false;
             this.textBoxString.Location = new System.Drawing.Point(12, 41);
+            this.textBoxString.Multiline = true;
             this.textBoxString.Name = "textBoxString";
             this.textBoxString.Size = new System.Drawing.Size(260, 20);
             this.textBoxString.TabIndex = 6;
@@ -92,6 +101,7 @@ namespace ADBStringStream
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBoxIP);
             this.Controls.Add(this.buttonConnect);
+            this.MinimumSize = new System.Drawing.Size(300, 139);
             this.Name = "ADBStringStream";
             this.Text = "ADB String Stream";
             this.Load += new System.EventHandler(this.Form1_Load);
